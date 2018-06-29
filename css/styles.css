@@ -1,0 +1,165 @@
+/*
+{#A682FF LAVENDER}
+{#715AFF VERY LIGHT BLUR}
+{#5887FF BLUEBERRY}
+{#55C1FF MAYA BLUR}
+{#102E4A SPACE CADET
+}
+
+
+/**********---G-L-O-B-E-L--S-T-Y-L-E-S--------
+-----------
+*************/
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after{
+box-sizing: inherit;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
+}
+h1{
+  font-size: 70px;
+}
+h2{
+  font-size: 35px;
+  margin-top: 0;
+}
+h3{
+  margin: 0;
+}
+
+a:hover {
+  text-decoration:none;
+}
+.con-wr{
+  max-width: 950px;
+  margin:0 auto;
+  padding: 50px;
+  overflow: auto;
+}
+.btn{
+  color: white;
+  background: red;
+  text-decoration: none;
+  padding: 10px;
+}
+.download{
+  position: absolute;
+  bottom:0;
+  right:0;
+}
+
+/********************header and footer*****************/
+
+header, footer {
+  background:#0c0615;
+  color: #b8c4fe;
+
+}
+/*******************header***************/
+header h1, header h2 {
+  color: #fee0dc;
+}
+.profile-img{
+  border-radius: 40%;
+}
+header{
+  padding-top: 50px;
+  position: relative;
+}
+
+/*****************footer***************/
+footer{
+  text-align: center;
+}
+.contact-info a{
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  font-size: 30px;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+/****************nav***********/
+nav{
+  text-align: center;
+  background: #102e4a;
+  position: fixed;
+  top: 0
+  width: 100%;
+}
+nav a{
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: lightgrey;
+  text-transform: uppercase;
+}
+
+/**************work experience***************/
+.work {
+  background:#f98948;
+}
+.work a{
+  color: green;
+}
+h3~p{
+    margin: 0;
+}
+
+.job-des p:first-of-type {
+  margin-top:0;
+}
+
+
+
+/**************education************/
+.education {
+  background: linear-gradient(rgba(122, 136, 142, 0.2), rgba(122, 136, 142, 0.2)),
+  url(../img/music.jpg) no-repeat fixed;
+  background-size: cover;
+}
+ul{
+  background-color: Black;
+  color: #715AFF;
+  padding-left: 40px;
+  width: 250px;
+  border-radius: 10px;
+}
+p+h3{
+  margin-top: 30px;
+}
+
+
+/*==============Media Queries===============*/
+@media (min-width: 900px){
+  .col-narrow{
+    width: 30%;
+    float: left;
+  }
+  .col-wide{
+    width: 70%;
+    float: left;
+    padding-left: 25px;
+  }
+}
+
+@media (max-width:899px){
+  header{
+    text-align: center;
+  }
+  .profile-img{
+
+    width: 200px;
+  }
+}
